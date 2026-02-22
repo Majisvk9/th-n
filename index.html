@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Moment Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,77 +15,81 @@
 
 <header>
   <div class="logo-container">
-    <img src="images/logo.jpg" alt="The Moment Shop Logo" class="logo-img">
+    <img src="images/logo.jpg" class="logo-img" alt="The Moment Shop Logo">
     <span class="logo-text">The Moment Shop</span>
   </div>
-
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
+      <li><a href="#">Collections</a></li>
       <li><a href="#">Women</a></li>
       <li><a href="#">Men</a></li>
-      <li><a href="#">Collections</a></li>
     </ul>
   </nav>
-
-  <div class="icons">
-    🛒 <span id="cart-count">0</span>
-  </div>
+  <div class="icons">🛒 <span id="cart-count">0</span></div>
 </header>
 
-<section class="collection-header">
-  <h1>Wedding Essentials</h1>
-  <p>Explore handcrafted traditional wedding essentials inspired by timeless craftsmanship.</p>
+<!-- HERO SLIDER -->
+<section class="hero-slider">
+  <div class="slide fade active">
+    <img src="images/slide1.jpg" alt="">
+    <div class="slide-text">
+      <h1>Elegant Wedding Essentials</h1>
+      <p>Make your special day unforgettable</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="images/slide2.jpg" alt="">
+    <div class="slide-text">
+      <h1>Handcrafted Traditions</h1>
+      <p>Celebrate culture with style</p>
+      <a href="#" class="btn-primary">Explore Collection</a>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="images/slide3.jpg" alt="">
+    <div class="slide-text">
+      <h1>Exclusive Bridal Collection</h1>
+      <p>Premium quality products</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+  <div class="dots"></div>
 </section>
 
-<div class="container">
-
-  <div class="sidebar">
-    <h3>Filter By</h3>
-    <label><input type="checkbox"> Topor</label>
-    <label><input type="checkbox"> Panpata</label>
-    <label><input type="checkbox"> Gachkouto</label>
-    <label><input type="checkbox"> Thali Sets</label>
-  </div>
-
-  <div class="products">
-
-    <div class="product">
-      <div class="sale-badge">SALE</div>
+<!-- FEATURED COLLECTION -->
+<section class="featured">
+  <h2 class="section-title">Featured Collections</h2>
+  <div class="collection-cards">
+    <div class="card">
       <img src="images/topor.jpg" alt="">
-      <h4>Regal Sholapith Topor</h4>
-      <div class="price">
-        ₹1199 <span class="old-price">₹1699</span>
-      </div>
-      <button class="btn" onclick="addToCart()">Add to Cart</button>
+      <h3>Sholapith Topor</h3>
+      <p>Elegant handcrafted topor</p>
+      <a href="#" class="btn-secondary">Shop Now</a>
     </div>
-
-    <div class="product">
+    <div class="card">
       <img src="images/panpata.jpg" alt="">
-      <h4>Decorative Welcome Panpata</h4>
-      <div class="price">₹499</div>
-      <button class="btn" onclick="addToCart()">Add to Cart</button>
+      <h3>Panpata</h3>
+      <p>Decorative traditional welcome items</p>
+      <a href="#" class="btn-secondary">Shop Now</a>
     </div>
-
-    <div class="product">
-      <div class="sale-badge">SALE</div>
+    <div class="card">
       <img src="images/gachkouto.jpg" alt="">
-      <h4>Handcrafted Gachkouto Set</h4>
-      <div class="price">
-        ₹529 <span class="old-price">₹699</span>
-      </div>
-      <button class="btn" onclick="addToCart()">Add to Cart</button>
+      <h3>Gachkouto Set</h3>
+      <p>Handcrafted wedding decor</p>
+      <a href="#" class="btn-secondary">Shop Now</a>
     </div>
-
-    <div class="product">
+    <div class="card">
       <img src="images/thali.jpg" alt="">
-      <h4>Traditional Wedding Thali</h4>
-      <div class="price">₹899</div>
-      <button class="btn" onclick="addToCart()">Add to Cart</button>
+      <h3>Wedding Thali</h3>
+      <p>Traditional ceremonial set</p>
+      <a href="#" class="btn-secondary">Shop Now</a>
     </div>
-
   </div>
-</div>
+</section>
 
 <footer>
   © 2026 The Moment Shop | All Rights Reserved

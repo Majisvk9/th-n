@@ -31,14 +31,11 @@ prev.addEventListener("click", ()=>{index=(index-1+slides.length)%slides.length;
 /* Auto Slide */
 setInterval(()=>{index=(index+1)%slides.length; showSlide(index);}, 4000);
 
-/* CART COUNTER */
-let count = 0;
-const cartCountEl = document.getElementById("cart-count");
-
-function addToCart(){
-  count++;
-  cartCountEl.innerText = count;
-
-  cartCountEl.classList.add("cart-animate");
-  setTimeout(()=>{cartCountEl.classList.remove("cart-animate");}, 300);
+/* BUY VIA WHATSAPP FUNCTION */
+function buyViaWhatsapp(productName){
+  const phoneNumber = '917031829524';
+  const productLink = window.location.href;
+  const message = `Hello, I want to buy *${productName}* from your shop. Here is the link: ${productLink}`;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
 }

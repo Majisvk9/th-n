@@ -1,74 +1,90 @@
-/* SLIDER */
-.slider{
-  position:relative;
-  width:100%;
-  height:500px;
-  overflow:hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivaah Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.slides{
-  display:flex;
-  height:100%;
-  transition:0.5s ease-in-out;
-}
+<div class="announcement">
+  Free Shipping on Orders Above ₹999 | Vivaah Collection Special
+</div>
 
-.slide{
-  min-width:100%;
-  position:relative;
-}
+<header>
+  <div class="logo">Karukarjo</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Vivaah Essentials</a></li>
+    </ul>
+  </nav>
+  <div class="icons">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
 
-.slide img{
-  width:100%;
-  height:500px;
-  object-fit:cover;
-}
+<section class="collection-header">
+  <h1>Vivaah Essentials</h1>
+  <p>Explore handcrafted traditional wedding essentials inspired by timeless craftsmanship.</p>
+</section>
 
-.slide-text{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  color:#fff;
-  text-align:center;
-  background:rgba(0,0,0,0.4);
-  padding:20px 40px;
-  border-radius:8px;
-}
+<div class="container">
 
-.prev, .next{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,0.5);
-  color:#fff;
-  border:none;
-  padding:12px;
-  cursor:pointer;
-  font-size:20px;
-}
+  <div class="sidebar">
+    <h3>Filter By</h3>
+    <label><input type="checkbox"> Topor</label>
+    <label><input type="checkbox"> Panpata</label>
+    <label><input type="checkbox"> Gachkouto</label>
+    <label><input type="checkbox"> Thali Sets</label>
+  </div>
 
-.prev{ left:20px; }
-.next{ right:20px; }
+  <div class="products">
 
-.dots{
-  position:absolute;
-  bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  gap:8px;
-}
+    <div class="product">
+      <div class="sale-badge">SALE</div>
+      <img src="images/topor.jpg" alt="">
+      <h4>Regal Sholapith Topor</h4>
+      <div class="price">
+        ₹1199 <span class="old-price">₹1699</span>
+      </div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
 
-.dot{
-  width:12px;
-  height:12px;
-  background:#fff;
-  border-radius:50%;
-  cursor:pointer;
-  opacity:0.5;
-}
+    <div class="product">
+      <img src="images/panpata.jpg" alt="">
+      <h4>Decorative Welcome Panpata</h4>
+      <div class="price">₹499</div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
 
-.dot.active{
-  opacity:1;
-  background:#8b0000;
-}
+    <div class="product">
+      <div class="sale-badge">SALE</div>
+      <img src="images/gachkouto.jpg" alt="">
+      <h4>Handcrafted Gachkouto Set</h4>
+      <div class="price">
+        ₹529 <span class="old-price">₹699</span>
+      </div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/thali.jpg" alt="">
+      <h4>Traditional Wedding Thali</h4>
+      <div class="price">₹899</div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 Karukarjo | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

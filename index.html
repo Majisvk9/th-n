@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivaah Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement">
+  Free Shipping on Orders Above ₹999 | Vivaah Collection Special
+</div>
+
+<header>
+  <div class="logo">Karukarjo</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Vivaah Essentials</a></li>
+    </ul>
+  </nav>
+  <div class="icons">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<section class="collection-header">
+  <h1>Vivaah Essentials</h1>
+  <p>Explore handcrafted traditional wedding essentials inspired by timeless craftsmanship.</p>
+</section>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h3>Filter By</h3>
+    <label><input type="checkbox"> Topor</label>
+    <label><input type="checkbox"> Panpata</label>
+    <label><input type="checkbox"> Gachkouto</label>
+    <label><input type="checkbox"> Thali Sets</label>
+  </div>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="sale-badge">SALE</div>
+      <img src="images/topor.jpg" alt="">
+      <h4>Regal Sholapith Topor</h4>
+      <div class="price">
+        ₹1199 <span class="old-price">₹1699</span>
+      </div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/panpata.jpg" alt="">
+      <h4>Decorative Welcome Panpata</h4>
+      <div class="price">₹499</div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="sale-badge">SALE</div>
+      <img src="images/gachkouto.jpg" alt="">
+      <h4>Handcrafted Gachkouto Set</h4>
+      <div class="price">
+        ₹529 <span class="old-price">₹699</span>
+      </div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/thali.jpg" alt="">
+      <h4>Traditional Wedding Thali</h4>
+      <div class="price">₹899</div>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 Karukarjo | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
